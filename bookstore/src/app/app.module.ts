@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
-import { LoginComponent } from './auth/compnents/login/login.component';
+import { HomeModule } from './home/home.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,9 @@ import { LoginComponent } from './auth/compnents/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AuthModule
+    AuthModule,
+    HomeModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
