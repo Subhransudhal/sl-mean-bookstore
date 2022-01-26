@@ -22,6 +22,15 @@ export class HomeComponent implements OnInit {
     book.price=200;
     this.books.push(book);
 
+    let book2= new bookmodel();
+    book2.id=2;
+    book2.name="Machine Design";
+    book2.author="R.S Khurmi";
+    book2.imgsrc="https://images-na.ssl-images-amazon.com/images/I/61EBD9rDkTL.jpg";
+    book2.price=250;
+    this.books.push(book2);
+
+
   }
 
 }

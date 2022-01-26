@@ -1,4 +1,6 @@
 <app-header></app-header>
 <p>home works!</p>
 <!-- attribute binding[] -->
-<app-book-card [book]="books[0]"></app-book-card>
+<!-- directives in angular -->
+<!-- a property appliied on a component to change its behaviour / structure -->
+<app-book-card *ngFor="let item of books" [book]="item"></app-book-card>
