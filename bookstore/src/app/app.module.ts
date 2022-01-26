@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { BookModule } from './book/book.module';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 
@@ -14,7 +15,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AuthModule,
     HomeModule,
-    SharedModule
+    SharedModule,
+    BookModule
   ],
   providers: [],
   bootstrap: [AppComponent]
