@@ -4,7 +4,10 @@
     <div class="card-body">
       <h5 class="card-title">{{book.name}}</h5>
       <p class="card-text">Author:{{book.author}}</p>
-      <p class="card-text">Price:{{book.price}}</p>
+      <p class="card-text">Price:{{book.price ? book.price : 'not available'}}
+        <!-- <ng- conatiner *ngIf="book price">{{book.price}}</ng-conatiner>
+        <ng-container *ngIf="!book.price">Not Available</ng-container> -->this method not working
+      </p>
       <a href="#" class="btn btn-primary">Add to cart</a>
     </div>
   </div>

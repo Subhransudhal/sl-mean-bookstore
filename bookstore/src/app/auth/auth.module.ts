@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './component/login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { BookModule } from '../book/book.module';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    SignInComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { BookModule } from '../book/book.module';
     BookModule
   ],
   exports:[
-    LoginComponent
+    LoginComponent,
+    SignInComponent
   ]
 })
 export class AuthModule { }
